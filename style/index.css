@@ -1,0 +1,93 @@
+    /* Reset mínimo */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+    margin: 0;
+    font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #2a2a2a;
+    background: #f7b5c4; /* Rosa pastel mate */
+    }
+
+    /* Encabezado */
+    .hero {
+    padding: 32px 16px 18px;
+    text-align: center;
+    background: #f7b5c4;
+    }
+
+    .hero__title {
+    margin: 0 0 18px 0;
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #c8498f; /* Turquesa suave */
+    text-shadow: none;
+    }
+
+    /* Barra de botones tipo píldora */
+    .pillbar {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+    }
+
+    .pill {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+    }
+
+    /* Colores más mates */
+    .pill--pink  { background: #e788a2; }
+    .pill--teal  { background: #6db8b3; }
+    .pill--blue  { background: #7aaedb; }
+    .pill--green { background: #8cc797; }
+
+    .pill:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+    }
+
+    /* Contenido principal */
+    .container {
+    max-width: 980px;
+    margin: 22px auto 60px;
+    padding: 0 16px;
+    }
+
+    /* Tarjeta de bienvenida */
+    .card {
+    margin: 0 auto;
+    max-width: 820px;
+    background: #ffffff;
+    color: #2a2a2a;
+    padding: 28px 22px;
+    border-radius: 18px;
+    border: 1px solid #e5b4c1; /* borde rosado suave */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    text-align: center;
+    }
+
+    .card h2 {
+    margin: 0 0 8px;
+    font-size: clamp(20px, 3.5vw, 28px);
+    color: #444;
+    }
+
+    .card p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 520px) {
+    .pill { padding: 10px 14px; font-size: 14px; }
+    .card { padding: 22px 16px; }
+    }

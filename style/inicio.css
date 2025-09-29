@@ -1,0 +1,87 @@
+    /* Reset básico */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f7b5c4; /* rosa mate suave */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+    }
+
+    /* Encabezado */
+    .header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    }
+
+    .header h1 {
+    font-size: clamp(26px, 4vw, 38px);
+    margin: 0 0 10px;
+    color: #3dbfc0; /* turquesa mate */
+    }
+
+    .header p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #444;
+    }
+
+    /* Contenido principal */
+    .content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    }
+
+    .card {
+    background: #fff;
+    border: 1px solid #e5b4c1;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    padding: 30px 25px;
+    max-width: 400px;
+    text-align: center;
+    }
+
+    .card h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #444;
+    }
+
+    .card p {
+    color: #555;
+    margin: 10px 0 20px;
+    font-size: 15px;
+    }
+
+    /* Botón Volver */
+    .btn-volver {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #7aaedb; /* azul mate */
+    color: #fff;
+    font-weight: 600;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background 0.3s;
+    }
+
+    .btn-volver:hover {
+    background: #5b90bd;
+    }
+
+    /* Footer */
+    .footer {
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    background: #f1a9bb;
+    color: #333;
+    }

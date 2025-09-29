@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor */
+form {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #444;
+}
+
+/* Inputs normales */
+input {
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Inputs de solo lectura */
+input[readonly] {
+    background: #e9ecef;
+    color: #555;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Botón calcular */
+button[type="button"] {
+    background: #007bff;
+    color: #fff;
+}
+button[type="button"]:hover {
+    background: #0056b3;
+}
+
+/* Botón limpiar */
+button[type="reset"] {
+    background: #6c757d;
+    color: #fff;
+}
+button[type="reset"]:hover {
+    background: #5a6268;
+}

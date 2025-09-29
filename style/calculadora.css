@@ -1,0 +1,64 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e89edd, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del formulario */
+form {
+    background: #fff;
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 320px;
+}
+
+/* Inputs */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #ec90fe;
+    box-shadow: 0 0 8px rgba(190, 88, 202, 0.6);
+}
+
+/* Botones */
+button {
+    width: 45%;
+    margin: 8px 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #e75ab1;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d182c1;
+    color: #fff;
+}
+
+/* Resultado */
+#resultado {
+    background: #f9f9f9;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
