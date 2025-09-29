@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="../estilos/cuadradotext.css">
+</head>
+<body>
+    <form action="">
+        <h2>Calculadora de cuadrado</h2>
+        <input type="text" name="num1" id="num1" placeholder="Ingrese un número">
+        <input type="text" name="resultado" id="resultado" placeholder="Resultado" readonly>
+        <button type="button" onclick="cuadrado()">Imprimir Cuadrado</button>
+    </form>
+
+    <script>
+        function cuadrado() {
+            let num1 = document.getElementById("num1").value;
+            if (isNaN(num1) || num1 === "") {
+                alert("Ingrese un número válido");
+                return;
+            }
+            let resultado = num1 * num1;
+            document.getElementById("resultado").value = resultado;
+        }
+    </script>
+</body>
+</html>
+
+
+            
+    

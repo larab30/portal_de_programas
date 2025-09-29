@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <link rel="stylesheet" href="../estilos/calculadora.css">
+</head>
+<body>
+    <form action="">
+        <input type="text" name="numero" id="numero" placeholder="ingresa un numero">
+        <input type="text" name="numero2" id="numero2" placeholder="ingresa otro numero">
+        <input type="text" name="resultado" id="resultado" placeholder="resultado">
+        <button type="button" onclick="suma()">+</button>
+        <button type="button" onclick="resta()">-</button>
+        <button type="button" onclick="multiplicacion()">x</button>
+        <button type="button" onclick="division()">÷</button>
+        <button type="button" onclick="limpiar()">limpiar</button>
+    </form>
+
+    <script>
+        function multiplicacion(){
+            let numero = document.getElementById("numero").value;
+            let numero2 = document.getElementById("numero2").value;
+            if(isNaN(numero) || numero === ""){
+                alert("debes ingresar un numero");
+                document.getElementById("numero").value = "";
+                return;
+            }
+            if(isNaN(numero2) || numero2 === ""){
+                alert("debes ingresar un numero");
+                document.getElementById("numero2").value = "";
+                return;
+            }
+            let resultado = numero * numero2;
+            document.getElementById("resultado").value = resultado;
+        }
+
+        function suma(){
+            let numero = document.getElementById("numero").value;
+            let numero2 = document.getElementById("numero2").value;
+            if(isNaN(numero) || numero === ""){
+                alert("debes ingresar un numero");
+                document.getElementById("numero").value = "";
+                return;
+            }
+            if(isNaN(numero2) || numero2 === ""){
+                alert("debes ingresar un numero");
+                document.getElementById("numero2").value = "";
+                return;
+            }
+            let resultado = parseFloat(numero) + parseFloat(numero2);
+            document.getElementById("resultado").value = resultado;
+        }
+
+        function resta(){
+            let numero = document.getElementById("numero").value;
+            let numero2 = document.getElementById("numero2").value;
+            if(isNaN(numero) || numero === ""){
+                alert("debes ingresar un numero");
+                document.getElementById("numero").value = "";
+                return;
+            }
+            if(isNaN(numero2) || numero2 === ""){
+                alert("debes ingresar un numero");
+                document.getElementById("numero2").value = "";
+                return;
+            }
+            let resultado = numero - numero2;
+            document.getElementById("resultado").value = resultado;
+        }
+
+        function division(){
+            let numero = document.getElementById("numero").value;
+            let numero2 = document.getElementById("numero2").value;
+            if(isNaN(numero) || numero === ""){
+                alert("debes ingresar un numero");
+                document.getElementById("numero").value = "";
+                return;
+            }
+            if(isNaN(numero2) || numero2 === ""){
+                alert("debes ingresar un numero");
+                document.getElementById("numero2").value = "";
+                return;
+            }
+            if(numero2 == 0){
+                alert("No se puede dividir entre 0");
+                return;
+            }
+            let resultado = numero / numero2;
+            document.getElementById("resultado").value = resultado;
+        }
+
+        function limpiar(){
+            document.getElementById("numero").value = "";
+            document.getElementById("numero2").value = "";
+            document.getElementById("resultado").value = "";
+        }
+    </script>
+</body>
+</html>
+
+
+            
+    
